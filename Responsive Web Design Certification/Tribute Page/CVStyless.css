@@ -1,0 +1,89 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    /* Native font stack https://getbootstrap.com/docs/4.2/content/reboot/#native-font-stack */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #333;
+    margin: 0;
+  }
+
+
+.item1{
+    grid-column: 1 / 4;
+    background:#2437c7;
+    color:white;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 0px 0px;
+    height: auto; 
+  }
+  
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right p{
+      font-size: 3.6em;
+      align-content: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#image {
+    width: 260px;
+    height: 250px;
+    border-radius: 50%;
+    border: double 20px transparent;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #3020ff,#ffffff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+.item2{
+    grid-column: 1 / 4;
+    background:LightSalmon;
+    font-size: 20px;
+  }
+.item3{
+    grid-row: 3 / 16;
+    background:PaleTurquoise;
+  }
+.item4, .item5, .item6, .item7{
+  grid-column: 2 / 4;
+  background:LightPink;
+  }
+.container {
+  background: LightGray;
+  display: grid;
+  margin: 40px 40px 40px 40px;
+}
+
+@media (max-width: 760px) {
+    #image {
+        width: 60px;
+        height: 50px;
+    }
+  }
+  
